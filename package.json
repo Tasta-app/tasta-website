@@ -8,7 +8,9 @@
     "web": "expo start --web",
     "lint:local": "biome check --write",
     "typecheck": "tsc --noEmit",
-    "lint:ci": "biome check"
+    "lint:ci": "biome check",
+    "build": "expo export -p web",
+    "serve": "expo serve"
   },
   "expo": {
     "doctor": {
