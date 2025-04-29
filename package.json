@@ -10,6 +10,14 @@
     "typecheck": "tsc --noEmit",
     "lint:ci": "biome check"
   },
+  "expo": {
+    "doctor": {
+      "reactNativeDirectoryCheck": {
+        "listUnknownPackages": false,
+        "exclude": ["tamagui", "i18next"]
+      }
+    }
+  },
   "jest": {
     "preset": "jest-expo"
   },
