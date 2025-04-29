@@ -1,0 +1,15 @@
+{
+  "welcome": "Bienvenue sur Tasta !",
+  "presentation": "Tasta est un réseau social dédié aux amoureux de la cuisine.",
+  "availableSoon": "Bientôt disponible sur :",
+  "explanations": {
+    "create": {
+      "title": "Créez et partagez vos recettes comme un chef!",
+      "description": "Avec Tasta, publier une recette devient un jeu d'enfant. Ajoutez facilement vos photos, la description de votre plat, les ingrédients nécessaires et chaque étape de préparation. Que vous soyez un passionné de cuisine ou un influenceur food, notre interface intuitive vous permet de valoriser vos créations et de les partager avec une communauté gourmande et engagée. Chaque recette que vous publiez peut être likée, commentée et sauvegardée par d'autres utilisateurs : c’est le moment de briller !"
+    },
+    "planning": {
+      "title": "Planifiez vos repas en un clin d’œil !",
+      "description": "Avec Tasta, oubliez le stress de savoir quoi manger chaque jour. Notre fonctionnalité de planification automatique génère pour vous un planning hebdomadaire personnalisé, selon vos goûts, vos besoins alimentaires et vos objectifs nutritionnels. Gagnez du temps, mangez de manière variée et découvrez de nouvelles recettes chaque semaine. C’est l’outil idéal pour simplifier votre quotidien tout en vous régalant !"
+    }
+  }
+}

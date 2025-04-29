@@ -1,0 +1,15 @@
+{
+  "welcome": "Welcome on Tasta!",
+  "presentation": "Tasta is a social network dedicated to food lovers.",
+  "availableSoon": "Available soon on:",
+  "explanations": {
+    "create": {
+      "title": "Create and share recipes like a pro!",
+      "description": "With Tasta, publishing a recipe is a breeze. Easily upload your photos, add a dish description, list the ingredients, and detail each preparation step. Whether you're a food enthusiast or a culinary influencer, our intuitive interface helps you showcase your creations and share them with a vibrant and engaged community. Every recipe you post can be liked, commented on, and saved by other users — it’s your time to shine!"
+    },
+    "planning": {
+      "title": "Plan your meals in just a few taps!",
+      "description": "With Tasta, forget the daily stress of deciding what to eat. Our smart meal planning feature generates a personalized weekly schedule for you, based on your tastes, dietary requirements, and nutrition goals. Save time, enjoy more variety, and discover new recipes every week. It’s the perfect tool to simplify your daily routine while savoring every bite!"
+    }
+  }
+}
