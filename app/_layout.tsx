@@ -4,7 +4,7 @@ import config from "@/tamagui.config";
 import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
-import React from "react";
+import React, { StrictMode } from "react";
 import { useColorScheme } from "react-native";
 import { TamaguiProvider } from "tamagui";
 
@@ -30,11 +30,13 @@ export default function RootLayout() {
     }
 
     return (
-        <TamaguiProvider
-            config={config}
-            defaultTheme={colorScheme === "dark" ? "dark" : "light"}
-        >
-            <Stack screenOptions={{ header: () => <Header /> }} />
-        </TamaguiProvider>
+        <StrictMode>
+            <TamaguiProvider
+                config={config}
+                defaultTheme={colorScheme === "dark" ? "dark" : "light"}
+            >
+                <Stack screenOptions={{ header: () => <Header /> }} />
+            </TamaguiProvider>
+        </StrictMode>
     );
 }

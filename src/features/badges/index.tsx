@@ -1,14 +1,16 @@
 import { Image } from "@/src/ui/styled";
-import { getLocales } from "expo-localization";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { useColorScheme } from "react-native";
 import { H2, YStack } from "tamagui";
 
 const Badges = React.memo(() => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
-    const languageCode = (getLocales()[0]?.languageCode ?? "en") as "fr" | "en";
+    const currentLanguageCode = React.useMemo(
+        () => i18n.language,
+        [i18n.language],
+    );
     const colorScheme = useColorScheme() as "dark" | "light";
 
     const googleBadgesMap = {
@@ -39,7 +41,8 @@ const Badges = React.memo(() => {
                     width={190}
                     height={60}
                     $sm={{ width: 240, height: 70 }}
-                    source={appleBadgesMap[languageCode][colorScheme]}
+                    // @ts-ignore
+                    source={appleBadgesMap[currentLanguageCode][colorScheme]}
                 />
                 <Image
                     contentFit="contain"
@@ -47,7 +50,7 @@ const Badges = React.memo(() => {
                     height={60}
                     $sm={{ width: 240, height: 70 }}
                     source={
-                        languageCode === "en"
+                        currentLanguageCode === "en"
                             ? googleBadgesMap.en
                             : googleBadgesMap.fr
                     }

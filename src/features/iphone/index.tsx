@@ -1,10 +1,12 @@
+import type { MockupsProps } from "@/app";
 import { Image } from "@/src/ui/styled";
 import React from "react";
 import { ScrollView, ZStack } from "tamagui";
 
 interface IPhoneProps {
-    content: any[];
+    content: MockupsProps[];
 }
+
 const ORIGINAL_FRAME_WIDTH = 1359;
 const ORIGINAL_FRAME_HEIGHT = 2736;
 const ORIGINAL_FRAME_PADDING = 90;
@@ -63,8 +65,8 @@ const IPhone = ({ content }: IPhoneProps) => {
             >
                 {content.map((image) => (
                     <Image
-                        key={image}
-                        source={image}
+                        key={image.key}
+                        source={image.image}
                         width={innerFrameWidth}
                         height={innerFrameHeight}
                     />
