@@ -3,11 +3,12 @@
   "vcs": {
     "enabled": false,
     "clientKind": "git",
-    "useIgnoreFile": false
+    "useIgnoreFile": true,
+    "root": "."
   },
   "files": {
     "ignoreUnknown": true,
-    "ignore": [".expo/*", ".tamagui/", "coverage/*", "node_modules/*"]
+    "ignore": [".expo/*", ".tamagui/", "node_modules/*", "assets/*", "dist/"]
   },
   "formatter": {
     "enabled": true,
