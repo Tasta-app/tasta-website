@@ -16,30 +16,30 @@ export default function Index() {
     const createImage: MockupsProps[] = [
         {
             key: "ff8597ff-5455-400a-825f-86fc6197a2e8",
-            image: require("@/assets/images/illustrations/new-recipe/1.png"),
+            image: "/images/illustrations/new-recipe/1.png",
         },
         {
             key: "111e1706-f0ba-400f-b8a8-07f1f9a30684",
-            image: require("@/assets/images/illustrations/new-recipe/2.png"),
+            image: "/images/illustrations/new-recipe/2.png",
         },
         {
             key: "30a2e97b-8dbc-4e66-a306-f59724405c37",
-            image: require("@/assets/images/illustrations/new-recipe/3.png"),
+            image: "/images/illustrations/new-recipe/3.png",
         },
         {
             key: "763e9a6f-a8cd-4803-b886-c124edf3f56e",
-            image: require("@/assets/images/illustrations/new-recipe/4.png"),
+            image: "/images/illustrations/new-recipe/4.png",
         },
     ];
 
     const planImage: MockupsProps[] = [
         {
             key: "d56a2a98-b5cd-411e-9cc5-abb3be6db271",
-            image: require("@/assets/images/illustrations/planning/1.png"),
+            image: "/images/illustrations/planning/1.png",
         },
         {
             key: "fdabe63f-e24e-462e-9c0c-f99ef96278b2",
-            image: require("@/assets/images/illustrations/planning/2.png"),
+            image: "/images/illustrations/planning/2.png",
         },
     ];
 

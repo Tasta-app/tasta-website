@@ -16,8 +16,8 @@ const ORIGINAL_INNERFRAME_HEIGHT =
     ORIGINAL_FRAME_HEIGHT - 2 * ORIGINAL_FRAME_PADDING;
 
 const IPhone = ({ content }: IPhoneProps) => {
-    const iPhoneFrame = require("@/assets/images/illustrations/iPhone.png");
-    const iPhoneStatus = require("@/assets/images/illustrations/iPhoneStatus.png");
+    const iPhoneFrame = "/images/illustrations/iPhone.png";
+    const iPhoneStatus = "/images/illustrations/iPhoneStatus.png";
     const [position, setPosition] = React.useState(0);
 
     React.useEffect(() => {
@@ -65,6 +65,7 @@ const IPhone = ({ content }: IPhoneProps) => {
             >
                 {content.map((image) => (
                     <Image
+                        priority="low"
                         key={image.key}
                         source={image.image}
                         width={innerFrameWidth}
@@ -73,11 +74,13 @@ const IPhone = ({ content }: IPhoneProps) => {
                 ))}
             </ScrollView>
             <Image
+                priority="high"
                 source={iPhoneFrame}
                 width={frameWidth}
                 height={frameHeight}
             />
             <Image
+                priority="normal"
                 source={iPhoneStatus}
                 width={frameWidth}
                 height={frameHeight}
