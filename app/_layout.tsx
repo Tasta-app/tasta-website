@@ -14,9 +14,10 @@ export default function RootLayout() {
     const colorScheme = useColorScheme();
 
     const [loaded, error] = useFonts({
-        "CabinetGrotesk-Regular": require("../assets/fonts/CabinetGrotesk-Regular.otf"),
-        "CabinetGrotesk-Bold": require("../assets/fonts/CabinetGrotesk-Bold.otf"),
-        "BricolageGrotesque_24pt-ExtraBold": require("../assets/fonts/BricolageGrotesque_24pt-ExtraBold.ttf"),
+        "CabinetGrotesk-Regular": "/fonts/CabinetGrotesk-Regular.otf",
+        "CabinetGrotesk-Bold": "/fonts/CabinetGrotesk-Bold.otf",
+        "BricolageGrotesque_24pt-ExtraBold":
+            "/fonts/BricolageGrotesque_24pt-ExtraBold.ttf",
     });
 
     React.useEffect(() => {

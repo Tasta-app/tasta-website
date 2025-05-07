@@ -13,21 +13,6 @@ const Badges = React.memo(() => {
     );
     const colorScheme = useColorScheme() as "dark" | "light";
 
-    const googleBadgesMap = {
-        en: require("@/assets/images/badges/google/en/badge.png"),
-        fr: require("@/assets/images/badges/google/fr/badge.png"),
-    };
-    const appleBadgesMap = {
-        en: {
-            light: require("@/assets/images/badges/apple/en/light.svg"),
-            dark: require("@/assets/images/badges/apple/en/dark.svg"),
-        },
-        fr: {
-            light: require("@/assets/images/badges/apple/fr/light.svg"),
-            dark: require("@/assets/images/badges/apple/fr/dark.svg"),
-        },
-    };
-
     return (
         <YStack items="center" gap="$3" pb="$3" $sm={{ pb: "$5" }}>
             <H2 size="$8">{t("availableSoon")}</H2>
@@ -41,19 +26,14 @@ const Badges = React.memo(() => {
                     width={190}
                     height={60}
                     $sm={{ width: 240, height: 70 }}
-                    // @ts-ignore
-                    source={appleBadgesMap[currentLanguageCode][colorScheme]}
+                    source={`/images/badges/apple/${currentLanguageCode}/${colorScheme}.svg`}
                 />
                 <Image
                     contentFit="contain"
                     width={200}
                     height={60}
                     $sm={{ width: 240, height: 70 }}
-                    source={
-                        currentLanguageCode === "en"
-                            ? googleBadgesMap.en
-                            : googleBadgesMap.fr
-                    }
+                    source={`/images/badges/google/${currentLanguageCode}/badge.png`}
                 />
             </YStack>
         </YStack>
