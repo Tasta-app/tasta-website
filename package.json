@@ -3,7 +3,7 @@
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
-    "start": "expo start",
+    "start": "expo start --port 8085",
     "reset-project": "node ./scripts/reset-project.js",
     "web": "expo start --web",
     "lint:local": "biome check --write",
@@ -28,6 +28,7 @@
     "@react-navigation/native": "^7.0.14",
     "@tamagui/animations-css": "1.126.4",
     "@tamagui/config": "^1.126.4",
+    "@tamagui/metro-plugin": "1.126.4",
     "expo": "~52.0.46",
     "expo-blur": "~14.0.3",
     "expo-constants": "~17.0.8",
