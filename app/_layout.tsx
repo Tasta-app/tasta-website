@@ -1,3 +1,4 @@
+import "@/assets/css/tamagui-web.css";
 import "@/i18n";
 import Header from "@/src/features/header";
 import config from "@/tamagui.config";
