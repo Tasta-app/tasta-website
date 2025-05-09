@@ -29,6 +29,8 @@
     "@tamagui/animations-css": "1.126.4",
     "@tamagui/config": "^1.126.4",
     "@tamagui/metro-plugin": "1.126.4",
+    "@vxrn/color-scheme": "^1.1.483",
+    "change-case": "^5.4.4",
     "expo": "~52.0.46",
     "expo-blur": "~14.0.3",
     "expo-constants": "~17.0.8",

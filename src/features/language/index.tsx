@@ -86,10 +86,12 @@ const LanguageSelector = () => {
         >
             <Popover.Trigger asChild>
                 <Button theme="translucent">
-                    <Language color={theme.color.get()} />
-                    <Text display="none" $sm={{ display: "flex" }}>
+                    <Button.Icon>
+                        <Language color={theme.color.get()} />
+                    </Button.Icon>
+                    <Button.Text display="none" $lg={{ display: "flex" }}>
                         {languages[currentLanguage] ?? languages.en}
-                    </Text>
+                    </Button.Text>
                 </Button>
             </Popover.Trigger>
             <Popover.Content theme="translucent">

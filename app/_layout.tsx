@@ -1,18 +1,17 @@
 import "@/assets/css/tamagui-web.css";
 import "@/i18n";
-import Header from "@/src/features/header";
 import config from "@/tamagui.config";
+import { SchemeProvider, useColorScheme } from "@vxrn/color-scheme";
 import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import React, { StrictMode } from "react";
-import { useColorScheme } from "react-native";
 import { TamaguiProvider } from "tamagui";
 
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
-    const colorScheme = useColorScheme();
+    const [colorScheme] = useColorScheme();
 
     const [loaded, error] = useFonts({
         "CabinetGrotesk-Regular": "/fonts/CabinetGrotesk-Regular.otf",
@@ -33,12 +32,15 @@ export default function RootLayout() {
 
     return (
         <StrictMode>
-            <TamaguiProvider
-                config={config}
-                defaultTheme={colorScheme === "dark" ? "dark" : "light"}
-            >
-                <Stack screenOptions={{ header: () => <Header /> }} />
-            </TamaguiProvider>
+            <SchemeProvider>
+                <TamaguiProvider
+                    disableInjectCSS
+                    config={config}
+                    defaultTheme={colorScheme}
+                >
+                    <Stack screenOptions={{ headerShown: false }} />
+                </TamaguiProvider>
+            </SchemeProvider>
         </StrictMode>
     );
 }
