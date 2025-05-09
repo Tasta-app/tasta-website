@@ -11,6 +11,8 @@
         "@tamagui/animations-css": "1.126.4",
         "@tamagui/config": "^1.126.4",
         "@tamagui/metro-plugin": "1.126.4",
+        "@vxrn/color-scheme": "^1.1.483",
+        "change-case": "^5.4.4",
         "expo": "~52.0.46",
         "expo-blur": "~14.0.3",
         "expo-constants": "~17.0.8",
@@ -894,6 +896,12 @@
 
     "@urql/exchange-retry": ["@urql/exchange-retry@1.3.1", "", { "dependencies": { "@urql/core": "^5.1.1", "wonka": "^6.3.2" } }, "sha512-EEmtFu8JTuwsInqMakhLq+U3qN8ZMd5V3pX44q0EqD2imqTDsa8ikZqJ1schVrN8HljOdN+C08cwZ1/r5uIgLw=="],
 
+    "@vxrn/color-scheme": ["@vxrn/color-scheme@1.1.483", "", { "dependencies": { "@tamagui/use-did-finish-ssr": "^1.126.4", "@vxrn/universal-color-scheme": "1.1.483", "@vxrn/use-isomorphic-layout-effect": "1.1.483" }, "peerDependencies": { "react": "*", "react-native": "*" } }, "sha512-Vo+F4dO/2LhivvKV3ojs5REEPoz72hKJiC9shmf2AI4hFH8/KnOLBGdHDymfxKSlxZqUEsyev+p28OnMRjaawg=="],
+
+    "@vxrn/universal-color-scheme": ["@vxrn/universal-color-scheme@1.1.483", "", { "dependencies": { "@vxrn/use-isomorphic-layout-effect": "1.1.483", "react": "^18.3.1 || ~19.0.0" }, "peerDependencies": { "react-native": "*" } }, "sha512-QL9KJbAVkJaziJAiC5Z2KL1kQIWyPFctDOf0GiCxzzO5AQt2DP89hxUqsaso2Mjc0Mpm4IipFOr6rfI4+vlRhw=="],
+
+    "@vxrn/use-isomorphic-layout-effect": ["@vxrn/use-isomorphic-layout-effect@1.1.483", "", { "dependencies": { "react": "^18.3.1 || ~19.0.0" } }, "sha512-nowk+p6bcbNohG6xaz67VNhIc/SI5iPLOa7vrkNberBg1dWFYcJWJBjVzlibY+JpE3d1ZEFvcIs69FYUddCCEA=="],
+
     "@webassemblyjs/ast": ["@webassemblyjs/ast@1.14.1", "", { "dependencies": { "@webassemblyjs/helper-numbers": "1.13.2", "@webassemblyjs/helper-wasm-bytecode": "1.13.2" } }, "sha512-nuBEDgQfm1ccRp/8bCQrx1frohyufl4JlbMMZ4P1wpeOfDhF6FQkxZJ1b/e+PLwr6X1Nhw6OLme5usuBWYBvuQ=="],
 
     "@webassemblyjs/floating-point-hex-parser": ["@webassemblyjs/floating-point-hex-parser@1.13.2", "", {}, "sha512-6oXyTOzbKxGH4steLbLNOu71Oj+C8Lg34n6CqRvqfS2O71BxY6ByfMDRhBytzknj9yGUPVJ1qIKhRlAwO1AovA=="],
@@ -1069,6 +1077,8 @@
     "caniuse-lite": ["caniuse-lite@1.0.30001715", "", {}, "sha512-7ptkFGMm2OAOgvZpwgA4yjQ5SQbrNVGdRjzH0pBdy1Fasvcr+KAeECmbCAECzTuDuoX0FCY8KzUxjf9+9kfZEw=="],
 
     "chalk": ["chalk@4.1.2", "", { "dependencies": { "ansi-styles": "^4.1.0", "supports-color": "^7.1.0" } }, "sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA=="],
+
+    "change-case": ["change-case@5.4.4", "", {}, "sha512-HRQyTk2/YPEkt9TnUPbOpr64Uw3KOicFWPVBb+xiHvd6eBx/qPr9xqfBFDT8P2vWsvvz4jbEkfDe71W3VyNu2w=="],
 
     "char-regex": ["char-regex@2.0.2", "", {}, "sha512-cbGOjAptfM2LVmWhwRFHEKTPkLwNddVmuqYZQt895yXwAsWsXObCG+YN4DGQ/JBtT4GP1a1lPPdio2z413LmTg=="],
 

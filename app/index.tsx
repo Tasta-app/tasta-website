@@ -1,4 +1,5 @@
 import Badges from "@/src/features/badges";
+import Header from "@/src/features/header";
 import IPhone from "@/src/features/iphone";
 import { SafeAreaView } from "@/src/ui/styled";
 import { useTranslation } from "react-i18next";
@@ -45,6 +46,7 @@ export default function Index() {
 
     return (
         <SafeAreaView bg="$background" flex={1} p="$3" $sm={{ p: "$5" }}>
+            <Header />
             <ScrollView flex={1}>
                 <YStack flex={1} p="$3" gap="$3" $sm={{ p: "$5", gap: "$5" }}>
                     <YStack gap="$2" justify="flex-start" items="center">
@@ -92,9 +94,9 @@ export default function Index() {
                         </YStack>
                     </YStack>
                 </YStack>
-                {!media.sm && <Badges />}
+                {!media.lg && <Badges />}
             </ScrollView>
-            {media.sm && <Badges />}
+            {media.lg && <Badges />}
         </SafeAreaView>
     );
 }
