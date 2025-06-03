@@ -27,7 +27,7 @@
     "@react-navigation/bottom-tabs": "^7.2.0",
     "@react-navigation/native": "^7.0.14",
     "@tamagui/animations-css": "1.126.4",
-    "@tamagui/config": "^1.126.4",
+    "@tamagui/config": "^1.126.13",
     "@tamagui/metro-plugin": "1.126.4",
     "@vxrn/color-scheme": "^1.1.483",
     "change-case": "^5.4.4",
